@@ -1,0 +1,9 @@
+.about {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  &__copy {
+    font-size: 2rem;
+    padding: 0 4rem;
+  }
+}
