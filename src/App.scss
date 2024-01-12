@@ -8,6 +8,7 @@ html {
   padding: 0;
   scroll-behavior: smooth;
 }
+//
 
 .main-container {
   background-color: #1e2128;
@@ -21,9 +22,7 @@ html {
   display: flex;
   flex-direction: column-reverse;
   align-items: flex-start;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  @include tablet {
+  @include sm-tablet {
     flex-direction: row;
     justify-content: center;
     align-items: end;
@@ -31,12 +30,17 @@ html {
 
   &-contact {
     padding: 10px;
-    text-align: right;
+    margin-left: 1rem;
+    @include sm-tablet {
+      margin-left: 0;
+      text-align: right;
+    }
+
     &__links {
       font-size: 0.8rem;
       display: flex;
       justify-content: flex-start;
-      @include tablet {
+      @include sm-tablet {
         justify-content: end;
       }
     }

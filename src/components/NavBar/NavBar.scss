@@ -1,0 +1,10 @@
+.nav {
+  display: flex;
+  background-color: transparent;
+  position: fixed;
+
+  &-menu {
+    font-size: 0.8rem;
+    margin: 0 5px;
+  }
+}
