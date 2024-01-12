@@ -2,10 +2,11 @@ import React from "react";
 import "./App.scss";
 import AboutMe from "./components/AboutMe/AboutMe";
 import NavBar from "./components/NavBar/NavBar";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <NavBar />
 
       <header className="main-container">
@@ -28,6 +29,8 @@ function App() {
       </header>
 
       <AboutMe />
+
+      <Projects />
     </div>
   );
 }

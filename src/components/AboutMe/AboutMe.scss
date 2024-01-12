@@ -1,11 +1,11 @@
 .about {
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   background-color: #f8f8ff; //ghost
+  padding: 4rem 4rem;
 
   &__copy {
-    font-size: 2rem;
-    padding: 0 4rem;
+    font-size: 1.2rem;
   }
 }

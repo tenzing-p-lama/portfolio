@@ -10,8 +10,12 @@ html {
 }
 //
 
+.app {
+  width: 100vw;
+}
+
 .main-container {
-  background-color: #1e2128;
+  background-color: #000;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -30,9 +34,7 @@ html {
 
   &-contact {
     padding: 10px;
-    margin-left: 1rem;
     @include sm-tablet {
-      margin-left: 0;
       text-align: right;
     }
 

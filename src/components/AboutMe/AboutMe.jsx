@@ -3,11 +3,16 @@ import "./AboutMe.scss";
 function AboutMe() {
   return (
     <div className="about">
+      <h2 className="about-title">About Me</h2>
+      <p className="about__copy">Hi! </p>
+      <p className="about__copy">I am Tenzing</p>
       <p className="about__copy">
-        Hi, I'm a recent Web Development Diploma graduate. With a background in
-        graphic design and a passion for art and photography, I have a keen eye
-        for aesthetics and user experience, as well as the technical skills to
-        build responsive and interactive websites and applications.
+        A frontend developer focusing on React.js to build responsive and
+        interactive websites and applications.
+      </p>
+      <p className="about__copy">
+        My background in graphic design and photography give me a keen eye for
+        aesthetics and user experience
       </p>
     </div>
   );
