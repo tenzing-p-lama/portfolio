@@ -2,6 +2,9 @@
 @use "/src/styles/partials/mixins" as *;
 
 //global
+* {
+  box-sizing: border-box;
+}
 body,
 html {
   margin: 0;

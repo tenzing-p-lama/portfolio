@@ -3,6 +3,7 @@ import "./App.scss";
 import AboutMe from "./components/AboutMe/AboutMe";
 import NavBar from "./components/NavBar/NavBar";
 import Projects from "./components/Projects/Projects";
+import MyStack from "./components/MyStack/MyStack";
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
       <AboutMe />
 
       <Projects />
+
+      <MyStack />
     </div>
   );
 }
