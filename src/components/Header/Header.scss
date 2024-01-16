@@ -1,0 +1,42 @@
+@use "/src/styles/partials/typography" as *;
+@use "/src/styles/partials/mixins" as *;
+
+.main-container {
+  background-color: #000;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  @include sm-tablet {
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+  }
+
+  &-contact {
+    padding: 10px;
+    @include sm-tablet {
+      text-align: right;
+    }
+
+    &__links {
+      font-size: 0.8rem;
+      display: flex;
+      justify-content: flex-start;
+      @include sm-tablet {
+        justify-content: end;
+      }
+    }
+  }
+
+  &-header {
+    padding: 10px;
+    text-align: left;
+  }
+}

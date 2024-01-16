@@ -1,10 +1,26 @@
 .nav {
   display: flex;
+  justify-content: flex-end;
   background-color: transparent;
   position: fixed;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  padding: 25px 0;
+  width: 100%;
+  height: fit-content;
+  transform: rotate(90deg);
+  transform-origin: top right;
 
   &-menu {
-    font-size: 0.8rem;
-    margin: 0 5px;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 0 15px;
+    text-transform: uppercase;
+    color: #4b6e8c;
+    font-family: "Share Tech Mono", monospace;
+    &:hover {
+      text-decoration: line-through;
+    }
   }
 }

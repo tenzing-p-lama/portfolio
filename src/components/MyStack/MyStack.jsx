@@ -2,7 +2,7 @@ import "./MyStack.scss";
 
 function MyStack() {
   return (
-    <div className="section mystack">
+    <div className="section mystack" id="mystack">
       <div className="section-title">
         <h2>My Stack</h2>
       </div>
