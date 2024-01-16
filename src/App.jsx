@@ -4,6 +4,7 @@ import AboutMe from "./components/AboutMe/AboutMe";
 import NavBar from "./components/NavBar/NavBar";
 import Projects from "./components/Projects/Projects";
 import MyStack from "./components/MyStack/MyStack";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
@@ -34,6 +35,8 @@ function App() {
       <Projects />
 
       <MyStack />
+
+      <Contact />
     </div>
   );
 }
