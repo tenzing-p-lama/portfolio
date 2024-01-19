@@ -1,3 +1,5 @@
+import React from "react";
+import VideoPlay from "../VideoPlay/VideoPlay";
 import "./Projects.scss";
 
 function Projects() {
@@ -7,12 +9,25 @@ function Projects() {
         <h2 className="section-title__content">Projects</h2>
       </div>
 
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
-        distinctio, possimus, exercitationem ipsum saepe cum asperiores fugiat
-        non numquam consequatur officia voluptates, ipsam cupiditate. Modi
-        aspernatur at laudantium sed error!
-      </p>
+      <div className="projects-content">
+        <div className="projects-content__item">
+          <a href="https://thegardenatditmas.netlify.app/" target="_blank">
+            <VideoPlay
+              project="The Garden at Ditmas"
+              videoSource="/videos/theGarden-desktop.mp4"
+            />
+          </a>
+        </div>
+
+        <div className="projects-content__item">
+          <a href="https://diyourself.netlify.app/" target="_blank">
+            <VideoPlay
+              project="DIYourself"
+              videoSource="/videos/DIY-desktop.mp4"
+            />
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

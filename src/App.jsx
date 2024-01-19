@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.scss";
+
 import AboutMe from "./components/AboutMe/AboutMe";
 import NavBar from "./components/NavBar/NavBar";
 import Projects from "./components/MyProjects/Projects";

@@ -1,0 +1,15 @@
+.video-container {
+  position: relative;
+  display: inline-block;
+  &__player {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 120%;
+    transform: translateX(-50%);
+    width: 420px; /* Adjust the width as needed */
+  }
+}
+.video-container:hover .video-container__player {
+  display: block;
+}

@@ -1,0 +1,14 @@
+.projects {
+  background-color: #f8f8ff; //ghost
+  &-content {
+    display: flex;
+    flex-direction: column;
+    &__item {
+      padding: 20px;
+      width: 100%;
+      border-top: 1px solid #4b6e8c;
+      border-bottom: 1px solid #4b6e8c;
+      cursor: pointer;
+    }
+  }
+}
