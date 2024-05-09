@@ -7,11 +7,9 @@ function MyStack() {
         <h2>My Stack</h2>
       </div>
 
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quia.
-        Similique nesciunt eligendi, saepe placeat aliquid mollitia officiis,
-        harum consectetur, voluptatem quia ab nobis quisquam natus in sint
-        blanditiis nulla.
+      <p className="mystack__content">
+        <b>HTMl</b> | <b>CSS3</b> | <b>Sass</b> | <b>JavaScript</b> |
+        <b>ReactJS</b> | <b>Node.js</b>| <b>Python</b>
       </p>
     </div>
   );

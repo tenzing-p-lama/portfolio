@@ -1,5 +1,5 @@
 import React from "react";
-import VideoPlay from "../VideoPlay/VideoPlay";
+// import VideoPlay from "../VideoPlay/VideoPlay";
 import "./Projects.scss";
 
 function Projects() {
@@ -11,20 +11,43 @@ function Projects() {
 
       <div className="projects-content">
         <div className="projects-content__item">
-          <a href="https://thegardenatditmas.netlify.app/" target="_blank">
-            <VideoPlay
-              project="The Garden at Ditmas"
-              videoSource="/videos/theGarden-desktop.mp4"
-            />
+          <a
+            className="project"
+            href="https://thatmomospot.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <p>That Momo Spot</p>
           </a>
         </div>
 
         <div className="projects-content__item">
-          <a href="https://diyourself.netlify.app/" target="_blank">
-            <VideoPlay
+          <a
+            className="project"
+            href="https://thegardenatditmas.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {/* <VideoPlay
+              project="The Garden at Ditmas"
+              videoSource="/videos/theGarden-desktop.mp4"
+            /> */}
+            <p>The Garden at Ditmas</p>
+          </a>
+        </div>
+
+        <div className="projects-content__item">
+          <a
+            className="project"
+            href="https://diyourself.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {/* <VideoPlay
               project="DIYourself"
               videoSource="/videos/DIY-desktop.mp4"
-            />
+            /> */}
+            <p>DIYourself</p>
           </a>
         </div>
       </div>

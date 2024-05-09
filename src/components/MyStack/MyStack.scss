@@ -1,3 +1,8 @@
 .mystack {
   background-color: #f8f8ff; //ghost
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+  }
 }

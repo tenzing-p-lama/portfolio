@@ -8,12 +8,14 @@ function Contact() {
           <h2>Let's Talk</h2>
         </div>
 
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro laborum
-          ut cupiditate, praesentium enim id ducimus quisquam qui quo beatae
-          mollitia aspernatur neque natus repudiandae in corporis libero.
-          Deleniti, odio.
-        </p>
+        <a
+          className="contact__mail"
+          href="mailto:tenzingpalden520@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <p>Mail me</p>
+        </a>
       </div>
     </>
   );

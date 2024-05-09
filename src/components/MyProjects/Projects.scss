@@ -7,8 +7,15 @@
       padding: 20px;
       width: 100%;
       border-top: 1px solid #4b6e8c;
-      border-bottom: 1px solid #4b6e8c;
       cursor: pointer;
+      &:last-child {
+        border-bottom: 1px solid #4b6e8c;
+      }
     }
   }
+}
+
+.project {
+  text-decoration: none;
+  font-size: 1.2rem;
 }
