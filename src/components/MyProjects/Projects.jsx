@@ -21,10 +21,10 @@ function Projects() {
       </div>
 
       <ul className="projects-container">
-        {projectsList.map((project) => (
+        {[...projectsList].reverse().map((project) => (
           <div key={project.id} className="projects-container__item">
             <div>
-              <Link to={`/${project.id}`} className="projects__item">
+              <Link to={`/project/${project.id}`} className="projects__item">
                 <img
                   className="projects__item-image"
                   src={project.image}
