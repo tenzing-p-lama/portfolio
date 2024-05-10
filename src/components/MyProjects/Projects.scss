@@ -1,6 +1,7 @@
 .projects {
   background-color: #f8f8ff; //ghost
-  &-content {
+
+  &-container {
     display: flex;
     flex-direction: column;
     &__item {
@@ -13,9 +14,12 @@
       }
     }
   }
-}
 
-.project {
-  text-decoration: none;
-  font-size: 1.2rem;
+  &__item {
+    text-decoration: none;
+    font-size: 1.2rem;
+    &-image {
+      width: 100%;
+    }
+  }
 }

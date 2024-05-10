@@ -1,3 +1,5 @@
+@use "../../styles/partials/variables" as *;
+
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -14,10 +16,10 @@
 
   &-menu {
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1.1rem;
     margin: 0 15px;
     text-transform: uppercase;
-    color: #4b6e8c;
+    color: $primary-color;
     font-family: "Share Tech Mono", monospace;
     &:hover {
       text-decoration: line-through;
