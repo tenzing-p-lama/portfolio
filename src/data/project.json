@@ -2,6 +2,7 @@
   {
     "id": "1",
     "title": "DIYourself",
+    "image": "/images/Screenshot-DIY.png",
     "description": "A community for DIY enthusiasts where woodwork project plans are shared in a simple format that helps beginners who want to work on simple wood projects find plans they can easily follow the provided steps and find success in their quest.",
     "technology": "React, Sass, Node.js",
     "role": "Web Desinger, Web Developer",
@@ -10,6 +11,7 @@
   {
     "id": "2",
     "title": "The Garden at Ditmas",
+    "image": "/images/Screenshot-TheGarden.png",
     "description": "A website for wood-working enthusiasts who are looking for a community to explore their interest in DIY wood work",
     "technology": "React, Sass",
     "role": "Web Designer, Web Developer",
@@ -18,6 +20,7 @@
   {
     "id": "3",
     "title": "That Momo Spot",
+    "image": "/images/Screenshot-ThatMomoSpot.png",
     "description": "A website for wood-working enthusiasts who are looking for a community to explore their interest in DIY wood work",
     "technology": "React, Sass, Adobe Illustrator",
     "role": "Graphic & Web Designer, Web Developer",

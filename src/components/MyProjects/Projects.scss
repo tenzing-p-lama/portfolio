@@ -4,6 +4,7 @@
   &-container {
     display: flex;
     flex-direction: column;
+    padding: 0;
     &__item {
       padding: 20px;
       width: 100%;
