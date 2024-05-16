@@ -8,8 +8,8 @@ function MyStack() {
       </div>
 
       <p className="mystack__content">
-        <b>HTMl</b> | <b>CSS3</b> | <b>Sass</b> | <b>JavaScript</b> |
-        <b>ReactJS</b> | <b>Node.js</b>| <b>Python</b>
+        <b>HTMl</b> <b>CSS3</b> <b>Sass</b> <b>JavaScript</b>
+        <b>ReactJS</b> <b>Node.js</b> <b>Python</b>
       </p>
     </div>
   );

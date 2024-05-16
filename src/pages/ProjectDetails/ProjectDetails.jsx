@@ -6,6 +6,8 @@ import "./ProjectDetails.scss";
 import projectsJSON from "../../data/project.json";
 
 function ProjectDetails() {
+  window.scrollTo(0, 0);
+
   const { id } = useParams();
 
   const [projectsList, setProjects] = useState(projectsJSON);
@@ -41,7 +43,7 @@ function ProjectDetails() {
   const isNextDisabled = currentIndex === projectsList.length - 1;
 
   return (
-    <div className="projectdetails">
+    <div className="section projectdetails">
       <div className="backto">
         <Link to="/">Back to Home</Link>
       </div>
