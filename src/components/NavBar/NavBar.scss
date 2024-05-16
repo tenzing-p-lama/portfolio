@@ -1,15 +1,15 @@
 @use "../../styles/partials/variables" as *;
 
 .nav {
-  display: flex;
-  justify-content: flex-end;
+  // display: flex;
+  // justify-content: flex-end;
   background-color: transparent;
   position: fixed;
   right: 0;
   bottom: 0;
   align-items: center;
-  padding: 25px 0;
-  width: 100%;
+  padding: 15px 0;
+  // width: 100%;
   width: max-content;
   height: fit-content;
   transform: rotate(90deg);
@@ -18,7 +18,7 @@
   &-menu {
     text-decoration: none;
     font-size: 1.1rem;
-    margin: 0 15px;
+    margin: 0 20px;
     text-transform: uppercase;
     color: $primary-color;
     font-family: "Share Tech Mono", monospace;

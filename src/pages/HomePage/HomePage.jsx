@@ -10,7 +10,7 @@ import Contact from "../../components/Contact/Contact";
 
 function HomePage() {
   return (
-    <div className="home">
+    <div className="home" id="home">
       <NavBar />
 
       <Landing />
