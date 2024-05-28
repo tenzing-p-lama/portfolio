@@ -9,11 +9,30 @@
   bottom: 0;
   align-items: center;
   padding: 15px 0;
-  // width: 100%;
   width: max-content;
   height: fit-content;
   transform: rotate(90deg);
   transform-origin: top right;
+
+  &__mobile {
+    bottom: none;
+    transform: none;
+  }
+
+  &-links {
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    margin: 0;
+
+    &__close {
+      display: none;
+    }
+  }
 
   &-menu {
     text-decoration: none;
@@ -26,4 +45,14 @@
       text-decoration: line-through;
     }
   }
+}
+
+.hamburgerMenu {
+  position: fixed;
+  right: 0;
+  padding: 1.5rem;
+  z-index: 99;
+}
+.no-scroll {
+  overflow: hidden;
 }
