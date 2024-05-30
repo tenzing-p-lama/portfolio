@@ -28,6 +28,8 @@
     background-color: white;
     position: fixed;
     margin: 0;
+    justify-content: center;
+    text-align: center;
 
     &__close {
       display: none;
@@ -41,6 +43,7 @@
     text-transform: uppercase;
     color: $primary-color;
     font-family: "Share Tech Mono", monospace;
+    padding: 1rem;
     &:hover {
       text-decoration: line-through;
     }

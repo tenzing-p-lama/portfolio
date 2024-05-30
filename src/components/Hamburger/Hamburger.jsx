@@ -7,7 +7,7 @@ const Hamburger = ({ isOpen, onClick }) => {
         {isOpen ? (
           <div
             className="burger burger1"
-            style={{ transform: isOpen ? "rotate(45deg)" : "rotate(0)" }}
+            style={{ transform: isOpen ? "rotate(35deg)" : "rotate(0)" }}
           ></div>
         ) : (
           <div className="burger"></div>
@@ -17,16 +17,11 @@ const Hamburger = ({ isOpen, onClick }) => {
           <div
             className="burger burger3"
             style={{
-              transform: isOpen ? "rotate(-45deg)" : "rotate(0)",
+              transform: isOpen ? "rotate(-35deg)" : "rotate(0)",
             }}
           ></div>
         ) : (
-          <div
-            className="burger"
-            style={{
-              opacity: isOpen ? "1" : "0",
-            }}
-          ></div>
+          <div className="burger"></div>
         )}
       </div>
     </>
