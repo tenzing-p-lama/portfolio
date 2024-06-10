@@ -3,7 +3,7 @@
     "id": "1",
     "title": "DIYourself",
     "image": "/images/Screenshot-DIY.png",
-    "description": "A community for DIY enthusiasts where woodwork project plans are shared in a simple format that helps beginners who want to work on simple wood projects find plans they can easily follow the provided steps and find success in their quest.",
+    "description": "A community for DIY enthusiasts where woodwork project plans are shared in a simple format that helps beginners who want to work on simple wood projects find plans they can easily follow the provided steps and find success in their quest.\n\nThis was my capstone project for Web Development Bootcamp which I wanted to put to use my frontend and backend knowledge. The project details are stored in a JSON file that display each different project's information when called and new projects stored by user would be added to the existing JSON file and displayed when called for. This project was a great experience to build as I faced many challenges in achieving the look that I wanted for the website as well as learning about what means of file I should use to store data for the backend.",
     "technology": "React, Sass, Node.js",
     "role": "Web Desinger, Web Developer",
     "link": "https://diyourself.netlify.app/"
@@ -12,7 +12,7 @@
     "id": "2",
     "title": "The Garden at Ditmas",
     "image": "/images/Screenshot-TheGarden.png",
-    "description": "A website for wood-working enthusiasts who are looking for a community to explore their interest in DIY wood work",
+    "description": "Nestled in the heart of Brooklyn, The Garden is a Japanese restaurant and bar offering an authentic culinary experience that transports you straight to Japan. With a menu featuring fresh sushi and sashimi to savory ramen and a variety of artisanal sake and craft cocktails, they blend traditional flavors with a modern twist. They provide an unforgettable dining experience that captures the essence of Japanese cuisine and culture.\n\nI created this website taking inspiration from minimal-style websites that capture a quiet, relaxing atmosphere which I felt in this restaurant. The ample negative space, muted color palette, and subtle typography evoke a sense of tranquility, inviting visitors to explore with ease. From the seamless navigation to the uncluttered layout, the website mirrors the essence of The Garden restaurant and bar, offering a glimpse into the serene oasis awaiting you in the restaurant.",
     "technology": "React, Sass",
     "role": "Web Designer, Web Developer",
     "link": "https://thegardenatditmas.netlify.app/"
@@ -21,8 +21,8 @@
     "id": "3",
     "title": "That Momo Spot",
     "image": "/images/Screenshot-ThatMomoSpot.png",
-    "description": "A website for wood-working enthusiasts who are looking for a community to explore their interest in DIY wood work",
     "technology": "React, Sass, Adobe Illustrator",
+    "description": "That Momo Spot is a cherished family-run business offering authentic Himalayan dumplings in Vancouver's Lower Mainland. Currently, they operate through a stall at the Richmond Night Market and participate in various single-day festivals across the city. With their new branding and website, they aim to expand their clientele by introducing an online ordering system for frozen dumplings, while also updating their existing customer base with new products and information.\n\nI designed the logo and visual identity for the brand and the website, and I continue to enhance the site with new features, imagery, and content as they become available.",
     "role": "Graphic & Web Designer, Web Developer",
     "link": "https://thatmomospot.netlify.app/"
   }

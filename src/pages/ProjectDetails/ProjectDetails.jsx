@@ -42,47 +42,56 @@ function ProjectDetails() {
   const isPreviousDisabled = currentIndex === 0;
   const isNextDisabled = currentIndex === projectsList.length - 1;
 
+  function formatDescription(description) {
+    return description
+      .split("\n\n")
+      .map((text, index) => <p key={index}>{text}</p>);
+  }
+
   return (
-    <div className="section projectdetails">
-      <div className="backto">
+    <div className="projectdetails">
+      <div className="navback">
         <Link to="/">Back to Home</Link>
       </div>
 
       {projectDetails && (
         <div className="projectdetails__content">
-          <h2 className="projectdetails__header">Project Details</h2>
+          <div className="projectdetails__image">
+            <img
+              className="projectdetails__image-img"
+              src={projectDetails.image}
+              alt={projectDetails.title}
+            />
+          </div>
 
-          <img
-            className="projectdetails__content-image"
-            src={projectDetails.image}
-            alt={projectDetails.title}
-          />
-          <h3 className="projectdetails__content-title">
-            {projectDetails.title}
-          </h3>
+          <div className="projectdetails__content-info">
+            <h3 className="projectdetails__content-title">
+              {projectDetails.title}
+            </h3>
 
-          <p className="projectdetails__content-desc">
-            {projectDetails.description}
-          </p>
+            <p className="projectdetails__content-desc">
+              {formatDescription(projectDetails.description)}
+            </p>
 
-          <p className="projectdetails__content-tech">
-            Technology: {projectDetails.technology}
-          </p>
+            <p className="projectdetails__content-tech">
+              Technology: {projectDetails.technology}
+            </p>
 
-          <p className="projectdetails__content-role">
-            My role: {projectDetails.role}
-          </p>
+            <p className="projectdetails__content-role">
+              My role: {projectDetails.role}
+            </p>
 
-          <p>
-            Project Link:{" "}
-            <a
-              href={projectDetails.link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {projectDetails.link}
-            </a>
-          </p>
+            <p>
+              Project Link:
+              <a
+                href={projectDetails.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {projectDetails.title}
+              </a>
+            </p>
+          </div>
         </div>
       )}
 
