@@ -43,6 +43,11 @@ const NavBar = () => {
         <a href="#contact" className="nav-menu" onClick={closeHamburger}>
           Let's Talk
         </a>
+
+        <div className="links">
+          <p>LinkedIn link</p>
+          <p>GitHub link</p>
+        </div>
       </ul>
     </div>
   );

@@ -15,9 +15,9 @@ function HomePage() {
 
       <Landing />
 
-      <AboutMe />
-
       <Projects />
+
+      <AboutMe />
 
       <MyStack />
 

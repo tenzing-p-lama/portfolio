@@ -6,7 +6,7 @@ function Landing() {
       <header className="landing">
         <div className="landing__container">
           <section className="landing-contact">
-            <h2>Fullstack Developer</h2>
+            <h2>Front End Developer</h2>
             <div className="landing-contact__links">
               {/* <p>LinkedIn</p>
               <p>GitHub</p>
