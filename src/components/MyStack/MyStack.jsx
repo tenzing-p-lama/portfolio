@@ -1,5 +1,14 @@
 import "./MyStack.scss";
 
+import html from "../../assets/images/stack/HTML5_icon.svg";
+import css from "../../assets/images/stack/css-icon.svg";
+import sass from "../../assets/images/stack/sass-icon.svg";
+import js from "../../assets/images/stack/javascript-icon.svg";
+import react from "../../assets/images/stack/react-icon.svg";
+import node from "../../assets/images/stack/nodejs-icon.svg";
+import py from "../../assets/images/stack/python-icon.svg";
+import sql from "../../assets/images/stack/mysql-logo.svg";
+
 function MyStack() {
   return (
     <div className="section mystack" id="mystack">
@@ -8,8 +17,16 @@ function MyStack() {
       </div>
 
       <p className="mystack__content">
-        <b>HTMl</b> <b>CSS3</b> <b>Sass</b> <b>JavaScript</b>
-        <b>ReactJS</b> <b>Node.js</b> <b>Python</b>
+        <div className="mystack-imgs">
+          <img className="mystack__logo" src={html} alt="html logo" />
+          <img className="mystack__logo" src={css} alt="css logo" />
+          <img className="mystack__logo" src={sass} alt="sass logo" />
+          <img className="mystack__logo" src={js} alt="js logo" />
+          <img className="mystack__logo" src={react} alt="react logo" />
+          <img className="mystack__logo" src={node} alt="node logo" />
+          <img className="mystack__logo" src={py} alt="py logo" />
+          <img className="mystack__logo" src={sql} alt="sql logo" />
+        </div>
       </p>
     </div>
   );
