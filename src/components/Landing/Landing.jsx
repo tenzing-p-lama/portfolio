@@ -8,9 +8,6 @@ function Landing() {
           <section className="landing-contact">
             <h2>Front End Developer</h2>
             <div className="landing-contact__links">
-              {/* <p>LinkedIn</p>
-              <p>GitHub</p>
-              <p>Email</p> */}
               <p>Commited to Excellence</p>
             </div>
           </section>

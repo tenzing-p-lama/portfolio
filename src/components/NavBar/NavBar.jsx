@@ -45,8 +45,23 @@ const NavBar = () => {
         </a>
 
         <div className="links">
-          <p>LinkedIn link</p>
-          <p>GitHub link</p>
+          <a
+            className="nav-menu"
+            href="https://www.linkedin.com/in/tenzingl/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
+
+          <a
+            className="nav-menu"
+            href="https://github.com/tenzing-p-lama"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
         </div>
       </ul>
     </div>
