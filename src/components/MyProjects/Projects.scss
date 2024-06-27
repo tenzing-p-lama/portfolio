@@ -1,3 +1,5 @@
+@use "../../styles/partials/mixins" as *;
+
 .projects {
   background-color: #f8f8ff; //ghost
 
@@ -6,11 +8,18 @@
     flex-direction: column;
     padding: 0;
     gap: 40px;
+    align-items: center;
     &__item {
       padding: 20px 0;
       width: 100%;
       border-top: 1px solid #4b6e8c;
       cursor: pointer;
+      @include sm-tablet {
+        width: 90%;
+      }
+      @include tablet {
+        width: 80%;
+      }
     }
   }
 

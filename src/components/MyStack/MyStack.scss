@@ -17,6 +17,9 @@
     gap: 20px;
     padding: 10px;
     position: relative;
+    @include tablet {
+      width: 50%;
+    }
   }
 
   &__logo {
@@ -26,23 +29,7 @@
     padding: 2px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     opacity: 0.85;
-    // &::after {
-    //   content: "";
-    //   display: block;
-    //   position: absolute;
-    //   top: 50%;
-    //   left: 50%;
-    //   width: 100px;
-    //   height: 100px;
-    //   margin-top: -50px;
-    //   margin-left: -50px;
-    //   border-radius: 50%;
-    //   opacity: 0;
-    //   pointer-events: none;
-    //   transform: scale(0.1);
-    //   background: rgba(255, 255, 255, 0.2);
-    //   transition: transform 0.5s, opacity 0.5s;
-    // }
+
     &:hover {
       transform: scale(1.5);
       z-index: 10;
