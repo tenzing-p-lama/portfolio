@@ -1,16 +1,57 @@
+@use "../../styles/partials/mixins" as *;
+
 .mystack {
   background-color: #f8f8ff; //ghost
 
   &__content {
     display: flex;
-    flex-wrap: wrap;
     gap: 10px 20px;
+    justify-content: center;
+  }
+
+  &-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+    padding: 10px;
+    position: relative;
   }
 
   &__logo {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
     padding: 2px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0.85;
+    // &::after {
+    //   content: "";
+    //   display: block;
+    //   position: absolute;
+    //   top: 50%;
+    //   left: 50%;
+    //   width: 100px;
+    //   height: 100px;
+    //   margin-top: -50px;
+    //   margin-left: -50px;
+    //   border-radius: 50%;
+    //   opacity: 0;
+    //   pointer-events: none;
+    //   transform: scale(0.1);
+    //   background: rgba(255, 255, 255, 0.2);
+    //   transition: transform 0.5s, opacity 0.5s;
+    // }
+    &:hover {
+      transform: scale(1.5);
+      z-index: 10;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      opacity: 1;
+      &::after {
+        transform: scale(1);
+      }
+    }
   }
 }

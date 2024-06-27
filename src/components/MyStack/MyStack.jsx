@@ -16,18 +16,18 @@ function MyStack() {
         <h2>My Stack</h2>
       </div>
 
-      <p className="mystack__content">
-        <div className="mystack-imgs">
+      <section className="mystack__content">
+        <ul className="mystack-imgs">
           <img className="mystack__logo" src={html} alt="html logo" />
           <img className="mystack__logo" src={css} alt="css logo" />
-          <img className="mystack__logo" src={sass} alt="sass logo" />
           <img className="mystack__logo" src={js} alt="js logo" />
+          <img className="mystack__logo" src={sass} alt="sass logo" />
           <img className="mystack__logo" src={react} alt="react logo" />
           <img className="mystack__logo" src={node} alt="node logo" />
           <img className="mystack__logo" src={py} alt="py logo" />
           <img className="mystack__logo" src={sql} alt="sql logo" />
-        </div>
-      </p>
+        </ul>
+      </section>
     </div>
   );
 }
