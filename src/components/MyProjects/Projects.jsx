@@ -3,6 +3,7 @@ import "./Projects.scss";
 import projectsJSON from "../../data/project.json";
 
 import { Link } from "react-router-dom";
+import RotatingBtn from "../RotatingBtn/RotatingBtn";
 
 function Projects() {
   const [projectsList, setProjects] = useState([]);
@@ -34,6 +35,15 @@ function Projects() {
           </div>
         ))}
       </ul>
+
+      <a
+        className="projects-link"
+        href="https://github.com/tenzing-p-lama"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <RotatingBtn textString="See More" />
+      </a>
     </div>
   );
 }

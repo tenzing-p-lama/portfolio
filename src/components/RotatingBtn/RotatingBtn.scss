@@ -1,0 +1,32 @@
+.rotating-btn {
+  position: absolute;
+  height: 100%;
+  animation: effect 15s linear infinite;
+
+  &-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 200px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  span {
+    position: absolute;
+    left: 50%;
+    transform-origin: 0px 100px;
+  }
+}
+
+@keyframes effect {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,11 +1,12 @@
 import "./Contact.scss";
+import RotatingBtn from "../RotatingBtn/RotatingBtn";
 
 function Contact() {
   return (
     <>
       <div className="section contact" id="contact">
         <div className="section-title">
-          <h2>Let's Talk</h2>
+          <h2>Let's Build Something Cool Together!</h2>
         </div>
 
         <a
@@ -14,7 +15,7 @@ function Contact() {
           target="_blank"
           rel="noreferrer"
         >
-          <p>Mail me</p>
+          <RotatingBtn textString="Contact Me" />
         </a>
       </div>
     </>

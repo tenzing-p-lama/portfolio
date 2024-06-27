@@ -44,7 +44,7 @@ const NavBar = () => {
           Let's Talk
         </a>
 
-        <div className="links">
+        <div className="nav-pages">
           <a
             className="nav-menu"
             href="https://www.linkedin.com/in/tenzingl/"
