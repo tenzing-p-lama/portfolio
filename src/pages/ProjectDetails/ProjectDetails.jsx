@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "./ProjectDetails.scss";
@@ -6,13 +6,20 @@ import "./ProjectDetails.scss";
 import projectsJSON from "../../data/project.json";
 
 function ProjectDetails() {
-  window.scrollTo(0, 0);
-
   const { id } = useParams();
   const [projectsList, setProjects] = useState(projectsJSON);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const projectDetails = projectsList.find(
     (project) => project.id === id.toString()
   );
+
+  useEffect(() => {
+    setProjects(projectsJSON);
+  }, []);
 
   const goToPreviousProject = () => {
     const currentIndex = projectsList.findIndex((project) => project.id === id);
