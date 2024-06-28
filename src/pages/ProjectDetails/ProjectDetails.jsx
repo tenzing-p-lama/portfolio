@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "./ProjectDetails.scss";
@@ -9,14 +9,10 @@ function ProjectDetails() {
   window.scrollTo(0, 0);
 
   const { id } = useParams();
-
   const [projectsList, setProjects] = useState(projectsJSON);
   const projectDetails = projectsList.find(
     (project) => project.id === id.toString()
   );
-  useEffect(() => {
-    setProjects(projectsJSON);
-  }, []);
 
   const goToPreviousProject = () => {
     const currentIndex = projectsList.findIndex((project) => project.id === id);
@@ -38,7 +34,7 @@ function ProjectDetails() {
   const currentIndex = projectsList.findIndex((project) => project.id === id);
   const currentCount = currentIndex + 1;
 
-  // Disable button
+  // Disable button when there's no more projects to show
   const isPreviousDisabled = currentIndex === 0;
   const isNextDisabled = currentIndex === projectsList.length - 1;
 
@@ -50,8 +46,14 @@ function ProjectDetails() {
 
   return (
     <div className="projectdetails">
-      <div className="navback">
-        <Link to="/">Back to Home</Link>
+      <div className="navigate">
+        <Link className="navigate__home" to="/">
+          Back to Home
+        </Link>
+
+        <Link className="navigate__mail" to="mailto:tenzingpalden520@gmail.com">
+          Contact Me
+        </Link>
       </div>
 
       {projectDetails && (
@@ -69,9 +71,9 @@ function ProjectDetails() {
               {projectDetails.title}
             </h3>
 
-            <p className="projectdetails__content-desc">
+            <div className="projectdetails__content-desc">
               {formatDescription(projectDetails.description)}
-            </p>
+            </div>
 
             <p className="projectdetails__content-tech">
               Technology: {projectDetails.technology}
