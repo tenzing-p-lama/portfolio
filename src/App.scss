@@ -16,3 +16,12 @@ html {
 .app {
   width: 100vw;
 }
+
+.section {
+  padding: 100px 50px;
+
+  &-title {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}

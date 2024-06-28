@@ -82,15 +82,15 @@ function ProjectDetails() {
               {formatDescription(projectDetails.description)}
             </div>
 
-            <p className="projectdetails__content-tech">
-              Technology: {projectDetails.technology}
+            <p className="projectdetails__content-op">
+              Technology: <span>{projectDetails.technology}</span>
             </p>
 
-            <p className="projectdetails__content-role">
-              My role: {projectDetails.role}
+            <p className="projectdetails__content-op">
+              My role: <span>{projectDetails.role}</span>
             </p>
 
-            <p>
+            <p className="projectdetails__content-op">
               Project Link:
               <a
                 href={projectDetails.link}

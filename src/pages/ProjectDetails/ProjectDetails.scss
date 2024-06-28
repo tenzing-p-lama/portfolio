@@ -23,6 +23,11 @@
         padding-top: 0;
       }
     }
+
+    &-op {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__image {
