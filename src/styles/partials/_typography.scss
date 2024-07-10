@@ -1,7 +1,8 @@
 @use "./variables" as *;
 
 h1,
-h2 {
+h2,
+h3 {
   margin: 0;
   font-family: "Advent Pro", sans-serif;
   color: $primary-color;

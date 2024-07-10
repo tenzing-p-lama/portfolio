@@ -74,9 +74,9 @@ function ProjectDetails() {
           </div>
 
           <div className="projectdetails__content-info">
-            <h3 className="projectdetails__content-title">
+            <h2 className="projectdetails__content-title">
               {projectDetails.title}
-            </h3>
+            </h2>
 
             <div className="projectdetails__content-desc">
               {formatDescription(projectDetails.description)}

@@ -22,6 +22,10 @@ function HomePage() {
       <MyStack />
 
       <Contact />
+
+      <div className="copyright">
+        <p>Copyright 2024. All Rights Reserved.</p>
+      </div>
     </div>
   );
 }

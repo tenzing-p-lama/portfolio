@@ -18,7 +18,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <div className="nav__mobile">
+    <div className="nav">
       <div className="hamburgerMenu" onClick={toggleHamburger}>
         <Hamburger isOpen={hamburger} />
       </div>
@@ -34,10 +34,6 @@ const NavBar = () => {
 
         <a href="#projects" className="nav-menu" onClick={closeHamburger}>
           Projects
-        </a>
-
-        <a href="#mystack" className="nav-menu" onClick={closeHamburger}>
-          My Stack
         </a>
 
         <a href="#contact" className="nav-menu" onClick={closeHamburger}>

@@ -10,6 +10,17 @@ import py from "../../assets/images/stack/python-icon.svg";
 import sql from "../../assets/images/stack/mysql-logo.svg";
 
 function MyStack() {
+  const stack = [
+    { src: html, alt: "html logo", title: "HTML5" },
+    { src: css, alt: "css logo", title: "CSS3" },
+    { src: js, alt: "js logo", title: "JavaScript" },
+    { src: sass, alt: "sass logo", title: "Sass" },
+    { src: react, alt: "react logo", title: "React.js" },
+    { src: node, alt: "node logo", title: "Node.js" },
+    { src: py, alt: "py logo", title: "Python" },
+    { src: sql, alt: "sql logo", title: "MySQL" },
+  ];
+
   return (
     <div className="section mystack" id="mystack">
       <div className="section-title">
@@ -18,14 +29,14 @@ function MyStack() {
 
       <section className="mystack__content">
         <ul className="mystack-imgs">
-          <img className="mystack__logo" src={html} alt="html logo" />
-          <img className="mystack__logo" src={css} alt="css logo" />
-          <img className="mystack__logo" src={js} alt="js logo" />
-          <img className="mystack__logo" src={sass} alt="sass logo" />
-          <img className="mystack__logo" src={react} alt="react logo" />
-          <img className="mystack__logo" src={node} alt="node logo" />
-          <img className="mystack__logo" src={py} alt="py logo" />
-          <img className="mystack__logo" src={sql} alt="sql logo" />
+          {stack.map((item, index) => (
+            <li key={index} className="mystack__item">
+              <img src={item.src} alt={item.alt} className="mystack__logo" />
+              <span className="mystack__title">
+                <h3>{item.title}</h3>
+              </span>
+            </li>
+          ))}
         </ul>
       </section>
     </div>

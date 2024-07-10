@@ -1,21 +1,21 @@
 @use "../../styles/partials/variables" as *;
 
 .nav {
-  background-color: transparent;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  align-items: center;
-  padding: 15px 0;
-  width: max-content;
-  height: fit-content;
-  transform: rotate(90deg);
-  transform-origin: top right;
+  // background-color: transparent;
+  // position: fixed;
+  // right: 0;
+  // bottom: 0;
+  // align-items: center;
+  // padding: 15px 0;
+  // width: max-content;
+  // height: fit-content;
+  // transform: rotate(90deg);
+  // transform-origin: top right;
 
-  &__mobile {
-    bottom: none;
-    transform: none;
-  }
+  // &__mobile {
+  //   bottom: none;
+  //   transform: none;
+  // }
 
   &-links {
     display: flex;
